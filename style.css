@@ -1,3 +1,45 @@
+/* Allows the boxes to beside each other*/
+*{
+    box-sizing: border-box;
+}
 body{
     font-size:300%;
 }
+
+
+header {
+    background-color: #490B3D;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+
+
+nav{
+    float: left;
+    width:30%;
+    padding: 20 px;
+    background-color: #BD1E51;
+}
+article{
+    float: right;
+    padding: 20px;
+    width: 70%;
+    
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media(max-width:600px){
+    nav,article{
+        width:100%;
+        height:auto;
+    }
+}
+    
